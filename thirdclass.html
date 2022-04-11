@@ -1,0 +1,188 @@
+<html>
+   
+    <head>
+        <title>
+            My First HTML Doc.
+        </title>
+        <!-- Internal CSS -->
+        <style>
+            h1{
+                color:darkorchid;
+            }
+        </style>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        Hey! It is understandable and easy but difficult to do!
+
+        <h1>Heading of the document1 <span>By: Sai Kavyusha</span> </h1>
+        <!-- Inline CSS -->
+        <h5 style="color:blue;">Heading of the document1 <span>By: Sai Kavyusha</span> </h5>
+      
+        <p>
+            As <b>we walked through</b> the <u>park with our drinks</u>, a light <i>drizzle began to</i> fall. 
+            She <strong>pulled out an umbrella</strong> from her bag, I pulled up my <em>hood and hunched</em> my shoulders.
+        </p>
+        SOME OTHER CONTENT
+       
+        <hr />
+
+       <h3 id="first-h3">Links</h3>
+        <a href="https://www.google.com">click here to go to google</a>
+        <br />
+        <a href="https://www.google.com" target="_blank">click here to go to google</a>
+
+        <br /> <br />
+        <a href="/secondclass.html">click here for page 2</a>
+        <a href="./secondclass.html">click here for second class</a>
+        <a href="../">click here for bts pictures</a>
+        <br /> <br />
+        
+        <h3 id="first-h3">Images</h3>
+        <img src="https://cdn.mwallpapers.com/photos/celebrities/music/bts-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-axfew.jpg" alt="BTS image 1" />
+        <br /> <br />
+        <a href="https://cdn.mwallpapers.com/photos/celebrities/music/bts-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-axfew.jpg" target="_blank">Click here to view full photo</a>
+        <hr />
+        <h3>Lists</h3>
+        <h4><u>Ordered lists(ol):</u></h4>
+        <ol type="i">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ol>
+        <h4><u>Un-ordered lists(ul):</u></h4>
+        <ul>
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+        <hr />
+        <h3>HTML forms</h3>
+        <form action="./responses.py">
+            <label style="background-color:blueviolet; color:chartreuse;">Full name:</label>
+            <input type="text" placeholder="Enter your full name..." />
+            <br /> <br />
+
+            <div style="background-color:blueviolet; color:chartreuse;">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email..." />
+            </div> <br />
+
+            <div>
+                <label>Password:</label>
+                <input type="password" placeholder="enter your password..." />
+            </div> <br />
+
+            <div>
+                <label>Gender:</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div> <br />
+
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date">
+            </div> <br />
+
+            <div>
+                <label>Upload your updated resume: <b>(in .pdf OR .doc OR .docx)</b></label>
+                <input type="file" accept=".pdf, .doc, .docx">
+            </div> <br />
+
+            <div>
+                <label>How happy are you today?</label>
+                <input type="range">
+            </div> <br />
+
+            <div>
+                <input type="checkbox">Male <br />
+                <input type="checkbox">Female
+                <input type="checkbox">Others <br />
+            </div>
+
+            <div>
+                <label>Feedback:</label>
+                <textarea cols="70" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+        
+        <hr />
+
+        <h3>Tables:</h3>
+        <table border="1">
+            <thead>
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Emp Email</th>
+                <th>Emp Designation</th>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>EM00764</td>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE-2</td>
+                </tr>
+                <tr>
+                    <td>EM00764</td>
+                    <td>Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE-3</td>
+                </tr>
+                <tr>
+                    <td>EM00764</td>
+                    <td>Logan Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Tester</td>
+                </tr>
+                <tr>
+                    <td>EM00764</td>
+                    <td>Ben Thomas</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Java Developer</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+        <h3>Multimedia</h3>
+        <h4>Youtube video:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K7BMF0ozFS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr />
+        <h3>Google Maps:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.05326388568!2d127.06415621513898!3d37.50666187980916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f19d8a87b5%3A0x960ce00631ec7836!2sBighit%20Entertainment!5e0!3m2!1sen!2sin!4v1647704137048!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <hr />
+        <h3>HTML entities</h3>
+        <p>As we walked through park with our drinks, a light drizzle began to fall. She pulled out an umbrella from her bag, I pulled up my hood &amp; hunched my shoulders.</p>
+        <hr />
+
+        <h3>HTML code:</h3>
+        &lt;!DOCTYPE html&gt; <br>
+        &lt;html&gt; <br>
+            &Tab; &lt;head&gt; <br>
+            &Tab; &lt;/head&gt; <br>
+       
+                 &Tab; &lt;body&gt; <br>
+                &Tab; &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+
+        <div style="height: 400px;"></div>
+
+        <script>
+            document.getElementById('first-h3')
+        </script>
+    </body>
+</html>
