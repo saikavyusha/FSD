@@ -85,6 +85,7 @@ console.log(str.toLowerCase())
      console.log('NO')
  }
 
+ // case 7
  const h = 100
  const i = 100
 
@@ -101,7 +102,7 @@ console.log(str.toLowerCase())
 const gen = 'F'
 const age = 17
 
-
+// method 1
 if(gen === 'M') {
      if(age >= 21) {
          console.log('You can Vote')
@@ -116,8 +117,20 @@ if(gen === 'M') {
      }
  }
 
+// method 2
+ if(gen === 'M', age >= 21)
+ {
+     console.log('You can vote');
+ }
+if (gen === 'F', age>= 18) {
+    console.log('you can vote');
+}
+else
+{
+    console.log('you cannot vote');
+}
 
-// Operators - AND (&&), OR (||) , NOT (!)
+// Operators - AND (&&), OR (||) , NOT (!) (method 3)
 if(gen == 'M' && age >= 21) {
      console.log('You can Vote');
 } else if(gen === 'F' && age >= 18) {
@@ -125,7 +138,6 @@ if(gen == 'M' && age >= 21) {
  } else {
      console.log('You Can NOT Vote');
  }
-
 
 // Finding the index
 const str3 = 'My name is Arun Kudiyal'
@@ -144,4 +156,3 @@ console.log(response)
 
 console.log(names[3]);
 console.log(names.charAt(3))
-
