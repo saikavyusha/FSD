@@ -1,0 +1,157 @@
+h3{
+    color:purple;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* #para-one, #para-three {
+    color: red;
+} */
+
+body {
+    /* background: linear-gradient(to bottom, rgba(110, 204, 112, 1), rgba(110, 204, 112, 0.4)); */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 100;
+    font-size: 0.7em;
+}
+
+img {
+    width: 70vw;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.demo-class {
+    color: red;
+}
+
+h1:hover {
+    color: purple;
+}
+
+.list-one:first-child {
+    color: green;
+}
+
+.list-one:last-child {
+    color: yellow;
+}
+
+.list-one:nth-child(3) {
+    color: blue;
+}
+
+#google-link:visited, #page-two:visited, #documentation:visited {
+    color: grey;
+}
+
+/* Attribute Selectors */
+
+img[src^="https://"] {
+    border: 10px solid black;
+}
+
+img[src$=".jpeg"] {
+    border: 10px solid blue;
+}
+
+img[src*="image"] {
+    border: 10px brown;
+}
+
+/* COLORS */
+h1 {
+    color: rgb(57, 63, 230);
+}
+
+#container-one {
+    width: 70%;
+    height: 400px;
+    background: linear-gradient(to right, green, red, blue, orange, yellow);
+}
+
+#container-two {
+    width: 70%;
+    height: 400px;
+    background: radial-gradient(circle, green, red 50%, blue, orange, yellow);
+}
+
+p {
+    /* font-size: 1cm; */
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+h1 {
+    /* border: 10px solid black; */
+    border: 5px double red;
+
+    /* padding: 20px; */
+    /* padding: 5px 10px; */
+    padding: 5px 10px 15px 20px;
+
+    margin: 10px;
+}
+
+
+#img-one {
+    width: 80%;
+    border: 10px double navy;
+    /* border-radius: 10px; */
+    border-radius: 50%;
+
+    margin-left: 10px;
+}
+
+/* FLEXBOXES */
+#container {
+    display: flex;
+    /* flex-direction: column; */
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.container-items {
+    background-color: blue;
+    width: 25px;
+    color: white;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 90px;
+    width: 15vw;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+
+    justify-content: space-around;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: black;
+
+    margin-right: 20px;
+}
+
+#nav-links li {
+    line-height: 60px;
+}
+
+#nav-button {
+    height: 25px;
+    line-height: 20px;
+}

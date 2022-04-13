@@ -19,8 +19,20 @@
         <h1>Heading of the document1 <span>By: Sai Kavyusha</span> </h1>
         <!-- Inline CSS -->
         <h5 style="color:blue;">Heading of the document1 <span>By: Sai Kavyusha</span> </h5>
+
+        <header>
+            <img id="logo" src="https://images.template.net/wp-content/uploads/2017/04/Abstract-Logo-in-Flame-Shape.jpg" alt="LOGO">
+            <ul id="nav-links">
+                <li> <a href="#">Home</a> </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button id="nav-button">Register Now!</button>
+        </header>
       
-        <p>
+        <p class="demo.class">
             As <b>we walked through</b> the <u>park with our drinks</u>, a light <i>drizzle began to</i> fall. 
             She <strong>pulled out an umbrella</strong> from her bag, I pulled up my <em>hood and hunched</em> my shoulders.
         </p>
@@ -29,23 +41,40 @@
         <hr />
 
        <h3 id="first-h3">Links</h3>
-        <a href="https://www.google.com">click here to go to google</a>
+        <a id="google-link" href="https://www.google.com">click here to go to google</a>
         <br />
-        <a href="https://www.google.com" target="_blank">click here to go to google</a>
+        <a id="page-two" href="https://www.google.com" target="_blank">click here to go to google</a>
 
         <br /> <br />
         <a href="/secondclass.html">click here for page 2</a>
         <a href="./secondclass.html">click here for second class</a>
         <a href="../">click here for bts pictures</a>
         <br /> <br />
+
+        <hr>
+        <div id="container-one">
+        </div>
+        <hr>
+        <div id="container-two">
+        </div>
+        <hr>
         
         <h3 id="first-h3">Images</h3>
-        <img src="https://cdn.mwallpapers.com/photos/celebrities/music/bts-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-axfew.jpg" alt="BTS image 1" />
+        <img id=" " src="https://cdn.mwallpapers.com/photos/celebrities/music/bts-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-axfew.jpg" alt="BTS image 1" />
         <br /> <br />
         <a href="https://cdn.mwallpapers.com/photos/celebrities/music/bts-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-axfew.jpg" target="_blank">Click here to view full photo</a>
         <hr />
+
+        <div id="container-one"></div> <br>
+        <div id="container-two">
+            <div id="example-cont"></div>
+        </div> <hr>
+
+        <img id="container-three" src="https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1.jpg" alt="">
+
         <h3>Lists</h3>
         <h4><u>Ordered lists(ol):</u></h4>
+        <!--order of the list item is necessary-->
         <ol type="i">
             <li>List Item - 1</li>
             <li>List Item - 2</li>
@@ -54,6 +83,7 @@
             <li>List Item - 5</li>
         </ol>
         <h4><u>Un-ordered lists(ul):</u></h4>
+        <!--order of the list item is not necessary-->
         <ul>
             <li>List Item - 1</li>
             <li>List Item - 2</li>
@@ -62,6 +92,18 @@
             <li>List Item - 5</li>
         </ul>
         <hr />
+
+        <div id="container">
+            <div class="container-items">A</div>
+            <div class="container-items">B</div>
+            <div class="container-items">C</div>
+            <div class="container-items">D</div>
+            <div class="container-items">E</div>
+            <div class="container-items">F</div>
+            <div class="container-items">G</div>
+            <div class="container-items">H</div>
+        </div>
+        
         <h3>HTML forms</h3>
         <form action="./responses.py">
             <label style="background-color:blueviolet; color:chartreuse;">Full name:</label>
@@ -169,7 +211,7 @@
         <p>As we walked through park with our drinks, a light drizzle began to fall. She pulled out an umbrella from her bag, I pulled up my hood &amp; hunched my shoulders.</p>
         <hr />
 
-        <h3>HTML code:</h3>
+        <h3>HTML entities:</h3>
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt; <br>
             &Tab; &lt;head&gt; <br>
@@ -180,6 +222,9 @@
         &lt;/html&gt; <br>
 
         <div style="height: 400px;"></div>
+
+        <div> <b>2021, Innomatics Reserach Labs!</b> <br> <i>For more info email us at <a href="mailto:info@innomatics.in">Email Us</a> </i>  </div>
+
 
         <script>
             document.getElementById('first-h3')
