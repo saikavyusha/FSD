@@ -401,3 +401,94 @@ console.log(jsonData);
 
 const jsData = JSON.parse(jsonData)
 console.log(jsData);
+
+
+// functions
+
+function add() {
+    let a = 100
+    let b = 200
+    let c = a + b;
+    console.log(c);
+}
+
+function addTwo(a ,b) {
+    if(typeof(a) === 'number' && typeof(b) === 'number') {
+        let c = a + b
+        console.log(c);
+    }
+}
+
+function addThree(a ,b) {
+    if(typeof(a) === 'number' && typeof(b) === 'number') {
+        let c = a + b
+        console.log(c);
+        return c
+    }
+}
+
+add()
+addTwo(25, 49)
+
+let ans = addThree(10, 35)
+console.log(ans);
+
+let sub = (a, b) => {
+    if(typeof(a) === 'number' && typeof(b) === 'number') {
+        c = a - b
+        return c
+    }
+}
+
+let ans3 = sub(100, 20)
+console.log(ans3)
+
+
+// Q. create a ES6 arrow function to take 2 values, create a pow function which will take the value of base and experiement and generate the power.
+
+function pow(base, exp) {
+    return Math.pow(base, exp)
+}
+
+const pow1 = ( base, exp ) => Math.pow1(base, exp)
+const pow2 = ( base, exp ) => typeof base === 'number' && typeof exp === 'number' ? Math.pow2(base, exp) : -1
+
+const result1 = pow(20, 2)
+console.log(result1);
+
+const add1 = (r, s) => {
+    t = r + s
+    console.log(t)
+}
+
+setTimeout(() => add(500, 200), 1000)
+
+const arr5 = [ 'Mango', 'Apple', 'Pineapple' ]
+const myObj = { fruit1: 'Some Fruit', fruit2: 'Some Other Fruit' }
+
+const merge = (arr5, myObj) => {
+    console.log(arr);
+    console.log(myObj);
+    myObj.fruit1 = arr5[0]
+    myObj.fruit2 = arr5[1]
+    console.log(myObj);
+}
+
+merge(arr, myObj)
+
+var fun = () => {
+    var a = 100
+    var b = 200
+    console.log(a , b)
+}
+
+if(true) {
+    const a = 100
+    const b = 200
+    console.log(a , b)
+} else {
+    const a = 500
+    const b = 500
+    console.log(a , b)
+}
+console.log(a , b)
