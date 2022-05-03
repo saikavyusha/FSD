@@ -17,8 +17,8 @@ varFour = varThree + 200
 console.log(varFour)
 
 // case 3
-result = 100 / 0
-console.log(result)
+result9 = 100 / 0
+console.log(result9)
 
 // case 4
 console.log('200' + 'JavaScript')
@@ -443,44 +443,47 @@ let sub = (a, b) => {
 let ans3 = sub(100, 20)
 console.log(ans3)
 
-
 // Q. create a ES6 arrow function to take 2 values, create a pow function which will take the value of base and experiement and generate the power.
 
 function pow(base, exp) {
     return Math.pow(base, exp)
 }
 
-const pow1 = ( base, exp ) => Math.pow1(base, exp)
-const pow2 = ( base, exp ) => typeof base === 'number' && typeof exp === 'number' ? Math.pow2(base, exp) : -1
+const pow1 = ( base, exp ) => Math.pow(base, exp)
+const pow2 = ( base, exp ) => typeof base === 'number' && typeof exp === 'number' ? Math.pow(base, exp) : -1
 
-const result1 = pow(20, 2)
-console.log(result1);
+const result = pow(20, 2)
+console.log(result);
 
-const add1 = (r, s) => {
-    t = r + s
-    console.log(t)
-}
 
-setTimeout(() => add(500, 200), 1000)
+// not getting the output
 
-const arr5 = [ 'Mango', 'Apple', 'Pineapple' ]
+// const add8 = (z, y) => {
+//     x = z + y
+//     console.log(x)
+// }
+
+setTimeout(() => add(500, 200), 2000)
+
+const arr6 = [ 'Mango', 'Apple', 'Pineapple' ]
 const myObj = { fruit1: 'Some Fruit', fruit2: 'Some Other Fruit' }
 
-const merge = (arr5, myObj) => {
-    console.log(arr);
+const merge = (arr6, myObj) => {
+    console.log(arr6);
     console.log(myObj);
-    myObj.fruit1 = arr5[0]
-    myObj.fruit2 = arr5[1]
+    myObj.fruit1 = arr6[0]
+    myObj.fruit2 = arr6[1]
     console.log(myObj);
 }
 
-merge(arr, myObj)
+merge(arr6, myObj)
 
-var fun = () => {
-    var a = 100
-    var b = 200
-    console.log(a , b)
-}
+// not getting output
+// var fun = () => {
+//     var w = 100
+//     var v = 200
+//     console.log(w , v)
+// }
 
 if(true) {
     const a = 100
@@ -492,3 +495,126 @@ if(true) {
     console.log(a , b)
 }
 console.log(a , b)
+
+// to print first 10 numbers using for loop
+for( let i=1; i <= 10; i+=1 ) {
+    console.log(i)
+}
+
+// to print first 5 numbers using while loop
+let j = 1
+while(j <= 5) {
+    console.log(j)
+    j+=1
+}
+
+// PRINT A TABLE OF 8
+
+for(let i=8; i <= 80; i+=8) {
+
+    // console.log('8 x ' + i/8 + ' = ' + i);
+    console.log(`8 x ${i/8} = ${i}`);
+}
+// get square values
+const square = a => a*a
+
+const result2 = square(3)
+console.log(result2);
+
+const notes = [
+    {id: 1, name: 'Note - 1', body: 'Note - 1 Body', year: 1980},
+    {id: 2, name: 'Note - 2', body: 'Note - 2 Body', year: 2001},
+    {id: 3, name: 'Note - 3', body: 'Note - 3 Body', year: 1999},
+    {id: 4, name: 'Note - 4', body: 'Note - 4 Body', year: 1997},
+    {id: 5, name: 'Note - 5', body: 'Note - 5 Body', year: 1967},
+    {id: 6, name: 'Note - 6', body: 'Note - 6 Body', year: 1921},
+    {id: 7, name: 'Note - 7', body: 'Note - 7 Body', year: 1947},
+    {id: 8, name: 'Note - 8', body: 'Note - 8 Body', year: 1937},
+    {id: 9, name: 'Note - 9', body: 'Note - 9 Body', year: 1950},
+    {id: 10, name: 'Note - 10', body: 'Note - 10 Body', year: 2000}
+]
+
+const ages = [12, 14, 19, 20, 25, 8, 21, 16, 71, 7, 22, 50, 42, 47, 69, 29]
+
+const strings2 = ['B', 'A', 'D', 'C', 'I', 'J', 'E', 'B', 'S', 'a']
+
+console.log(notes)
+console.log(notes[0].body);
+
+
+// to get all the data present
+for(let i = 0; i < notes.length; i+=1) {
+    console.log(notes[i])
+}
+
+// to get only some part of data
+notes.forEach( (note, index) => console.log(`${note.body} - Index : ${index}`) )
+
+const filteredData = notes.filter( (note, index) => index%2 === 0 )
+console.log(filteredData)
+
+const filteredNotes = notes.filter( (note, index) => note.year >= 1950 && note.year <= 1960  &&index % 2 === 0 )
+console.log(filteredNotes)
+
+const arr7 = notes.map( (note, index) => note.body )
+console.log(arr7)
+
+for(let i = 0; i < notes.length; i++) {
+    if(i %2 === 0) {
+        console.log(notes[i])
+    }
+}
+
+for(let i = 0; i < notes.length; i++) {
+    console.log(notes[i].body)
+}
+
+setTimeout( () => add(500, 200), 2000 )
+
+// Higher order array methods
+// 1. forEach
+notes.forEach( (note, index) => index%2 !== 0 ? console.log(note) : -1)
+
+// 2. filter
+const arr8 = notes.filter( note => note.id === 10 )
+console.log(arr8)
+
+const canDrink = ages.filter(age => age === 21)
+console.log(canDrink);
+
+const noteBody = notes.map( note => note.body )
+console.log(noteBody)
+
+console.log(ages);
+
+const sortedAges = ages.sort( (a, b) => a - b )
+console.log(sortedAges);
+
+const sortedAges2 = ages.sort( (a, b) => {
+    if( a < b ) {
+        return -1
+    } else if(a === b) {
+        return 0
+    } else {
+        return +1
+    }
+})
+console.log(sortedAges2)
+
+const sortedStrings = strings.sort( (a, b) => {
+    if( a < b ) {
+        return -1
+    } else {
+        return +1
+    }
+})
+
+console.log(sortedAges2)
+console.log(sortedStrings);
+
+const sortedStrings3 = strings.sort( )
+
+console.log(sortedStrings3);
+
+const addedAges = ages.reduce( (total, age) => {return total * age}, 1 )
+console.log(addedAges);
